@@ -1,0 +1,24 @@
+<div class="modal-container">
+<div class="modal-body">
+  <form [formGroup]="Formvalue">
+    <div class="mb-3">
+      <label for="exampleInputItem" class="form-label">Item Name</label>
+      <input type="text" formControlName="itemname" class="form-control" id="exampleInputItem">
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputDescription" class="form-label">Description</label>
+      <textarea type="text" formControlName="description" class="form-control" id="exampleInputDescription"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPrice" class="form-label">product price</label>
+      <input type="number" formControlName="price" class="form-control" id="exampleInputPrice">
+    </div>
+    <div class="modal-footer">
+      <button type="button"  class="btn btn-primary" (click)="postItemDetails()">Add</button>
+    </div>
+  </form>
+</div>
+
+</div>
+

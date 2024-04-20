@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light" id="myNavbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="" class="logo">
+    <a class="navbar-brand" href="#">Angular CRUD</a>
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" id="change-color">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/additems' id="change-color">Add Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/itemlist" id="change-color">Item List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/notifications" id="change-color">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" navbarDropdownMenuLink routerLink="/notifications" id="change-color">contact Us</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  
+<router-outlet></router-outlet>

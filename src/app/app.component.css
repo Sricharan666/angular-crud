@@ -1,0 +1,27 @@
+.navbar {
+    background-image: linear-gradient(to bottom right, rgb(60, 170, 210), rgb(68, 212, 80)); 
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    color: white;
+}
+
+#navbarDropdownMenuLink {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#change-color,
+#navbarDropdownMenuLink {
+    color: rgb(253, 253, 254);
+    margin-left: 80px;
+    font-size: 18px;
+}
+.logo {
+    width: 50px;
+    margin-left: 40px;
+}

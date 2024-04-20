@@ -1,0 +1,6 @@
+.item-table{
+    height: 100vh;
+    box-shadow: 3px 3px 4px 4px gray;
+    width: 90%;
+    margin-left: 50px;
+}

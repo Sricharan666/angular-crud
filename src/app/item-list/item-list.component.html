@@ -1,0 +1,63 @@
+
+<div class="item-table">
+  <table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Item ID</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+      <tr *ngFor= "let row of itemData">
+        <td>{{row.id}}</td>
+        <td>{{row.itemName}}</td>
+        <td>{{row.Description}}</td>
+        <td>{{row.price}}</td>
+        <td>
+            <button (click)= "onEdit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+            <button (click)= "deleteItem(row)" class="btn btn-danger mx-3">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
+</div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">itemData Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="Formvalue">
+
+              <div class="mb-3">
+                <label for="exampleInputItem" class="form-label">Item Name</label>
+                <input type="text" formControlName="itemname" class="form-control" id="exampleInputItem">
+          
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputDescription" class="form-label">Description</label>
+                <textarea type="text" formControlName="description" class="form-control" id="exampleInputDescription"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPrice" class="form-label">product price</label>
+                <input type="number" formControlName="price" class="form-control" id="exampleInputPrice">
+              </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf= "showAdd" class="btn btn-primary" (click)="postItemDetails()">Add</button>
+          <button type="button" *ngIf= "showUpdate" class="btn btn-primary" (click)="updateItemDetails()">update</button>
+        </div>
+      </div>
+    </div>
+  </div>

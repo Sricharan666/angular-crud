@@ -1,0 +1,36 @@
+.modal-container{
+    align-items: center;
+    display: grid;
+    justify-content: center;
+  }
+.modal-body {
+    width: 600px;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 3px 3px 4px 4px gray;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000591; 
+  }
+
+  
+  
+  
+  
+  
+  
+  
